@@ -20,8 +20,8 @@ SET FOREIGN_KEY_CHECKS = 0;
 -- ----------------------------
 -- Table structure for Food
 -- ----------------------------
-DROP TABLE IF EXISTS `Food`;
-CREATE TABLE `Food` (
+DROP TABLE IF EXISTS `foods`;
+CREATE TABLE `foods` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `title` varchar(255) DEFAULT NULL,
@@ -33,8 +33,8 @@ CREATE TABLE `Food` (
 -- ----------------------------
 -- Table structure for User
 -- ----------------------------
-DROP TABLE IF EXISTS `User`;
-CREATE TABLE `User` (
+DROP TABLE IF EXISTS `users`;
+CREATE TABLE `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(255) DEFAULT NULL,
   `last_name` varchar(255) DEFAULT NULL,
